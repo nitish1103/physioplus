@@ -1,0 +1,152 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle class="custom">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Physio Plus Tech
+    </ion-title>
+  </ion-navbar>
+  <!--<div class="search-bar-wrapper">
+    <ion-searchbar
+      #productQuery
+      [(ngModel)]="productId"
+      placeholder="Search"
+    >
+    </ion-searchbar>
+  </div>-->
+</ion-header>
+
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <button></button>
+      <img [src]="companyLogo" style="padding: 30px;padding-top: 10px;">
+      <button ion-item (click)="addCount()">
+        <ion-icon name="apps"></ion-icon>
+        <span style="font-size: 19px;">Home</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="locate"></ion-icon>
+        <span style="font-size: 19px;">Multi-Locations</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="people"></ion-icon>
+        <span style="font-size: 19px;">Patients</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="calendar"></ion-icon>
+        <span style="font-size: 19px;">Appointments</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="cash"></ion-icon>
+        <span style="font-size: 19px;">Finance</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="person-add"></ion-icon>
+        <span style="font-size: 19px;">Daily Register</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="people"></ion-icon>
+        <span style="font-size: 19px;">Staffs</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="walk"></ion-icon>
+        <span style="font-size: 19px;">Exercise Prescription</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="settings"></ion-icon>
+        <span style="font-size: 19px;">Settings</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="contact"></ion-icon>
+        <span style="font-size: 19px;">My Accounts</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="notifications"></ion-icon>
+        <span style="font-size: 19px;">Notification</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="globe"></ion-icon>
+        <span style="font-size: 19px;">Physio Events</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="cash"></ion-icon>
+        <span style="font-size: 19px;">Physio Wallet</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="videocam"></ion-icon>
+        <span style="font-size: 19px;">Physio Videos</span>
+      </button>
+      <button ion-item (click)="login()">
+        <ion-icon name="log-in"></ion-icon>
+        <span style="font-size: 19px;">Login</span>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="log-out"></ion-icon>
+        <span style="font-size: 19px;">Logout</span>
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]=""></ion-nav>
+
+<ion-content>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin: 15px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.kevinmd.com/blog/wp-content/uploads/shutterstock_168773126.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrP8vl8odsC4NWKTW7KH6vqrgb717rerwzIF71pGqAie0VXL2y" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="http://www.royalberkshire.nhs.uk/Images/Staff/Junior%20doctors%20on%20rounds%20with%20consultant.JPG" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToPatientListPage()" outline>Patient's List</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToEventListPage()" outline>Physio Event</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToAppointmentPage()" outline>Todays Appointments</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToExpensePage()" outline>Expense</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToOfficesPage()" outline>Offices</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToForumPage()" outline>Forum</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToDailyRegisterPage()" outline>Daily Register</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="dark" round style="height: 55px;margin-left: 15px;" (click)="goToMyProfilePage()" outline>My Profile</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

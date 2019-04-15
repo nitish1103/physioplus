@@ -1,0 +1,101 @@
+page-dashboard {
+  .bar-button-default-md {
+    color: white!important;
+  }
+
+  .title {
+  	font-weight: 800;
+  	background-color: #048cef;
+  	color: white;
+  }
+
+  .category ion-card-content{
+    padding:2px!important;
+  }
+
+  ion-card.category {
+    height:50px;
+    margin:0px;
+    width: 100%;
+  }
+
+  ion-card img {
+    height:50px;
+  }
+
+  .categorytext {
+    color: white;
+    position: absolute;
+    top: 16px;
+    left:31%;
+  }
+
+  .search-bar-wrapper {
+    background-color: #048cef;
+    margin-top: -17px;
+    padding-left: 13px;
+  }
+
+  ion-icon {
+    color:white!important;
+  }
+
+  col-4 {
+    padding:0px!important;
+  }
+
+  .col {
+    padding: 0px!important;
+  }
+
+  .deal {
+    padding: 7px;
+    width: 100%;
+  }
+
+  .timer {
+    float: right;
+  }
+
+  .deal-row {
+    background-color: #716c6c;
+    color: white;
+    margin: 5px;
+  }
+
+  .list .icon {
+    color: #048cef !important;
+    font-size: x-large;
+    padding: 10px;
+  }
+
+  .item-md.item-block .item-inner {
+    border-bottom: none!important;
+  }
+
+  .input-wrapper {
+    height: 22px!important;
+  }
+
+  ion-col {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #048cef;
+    text-align: center;
+  }
+
+  .scroll-content {
+    overflow-y: scroll!important;
+  }
+
+  .button-inner {
+    white-space: normal!important;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .button {
+    width: 150px;
+  }
+}

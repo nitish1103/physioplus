@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="arrow-round-back" (click)="goToDashboard()" style="margin-right: 10px;"></ion-icon>
+      Physio Plus Tech
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item> User Profile</ion-item>
+  <ion-card>
+    <img [src]="userLogo" height="179" style="margin: auto;width: 70%;"/>
+    <ion-card-content>
+      <ion-card-title>
+        Demo User
+      </ion-card-title>
+      <p>
+        Male
+      </p>
+    </ion-card-content>
+      <ion-grid>
+        <button ion-button>Edit Profile</button>
+      </ion-grid>
+  </ion-card>
+
+</ion-content>

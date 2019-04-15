@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="arrow-round-back" (click)="goToDashboard()" style="margin-right: 10px;"></ion-icon>
+      Physio Plus Tech
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="background-color: #eeeeee;padding: 20px;font-size: 18px;">
+    <ion-icon name="calendar"></ion-icon> 15 April
+  </div>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>
+          <img [src]="userLogo" class="user">
+        </ion-col>
+        <ion-col col-9>
+          <strong>Nitish Mishra</strong>
+          <p>01:30 AM</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <button ion-button (click)="addAppointment()">ADD APPOINTMENT</button>
+  </ion-grid>
+</ion-footer>
+

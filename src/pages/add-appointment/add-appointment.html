@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="arrow-round-back" (click)="goToAppointmentPage()" style="margin-right: 10px;"></ion-icon>
+      Physio Plus Tech
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <form>
+      <div class="form-group">
+        <input type="email" class="form-control"  placeholder="Select Patient" autocomplete="off" autofocus="off">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Date Of Appointment" autocomplete="off" autofocus="off">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Time Of Appointment" autocomplete="off" autofocus="off">
+      </div>
+    </form>
+    <ion-grid>
+      <button ion-button color="dark" round style="height: 45px;">Submit</button>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,68 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="arrow-round-back" (click)="goToDashboard()" style="margin-right: 10px;"></ion-icon>
+      Physio Plus Tech
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img [src]="userLogo" class="user">
+        </ion-col>
+        <ion-col col-9>
+          <strong>Nitish Mishra</strong>
+          <p>RA1555</p>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="arrow-dropright"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img [src]="userLogo" class="user">
+        </ion-col>
+        <ion-col col-9>
+          <strong>Rahul Shukla</strong>
+          <p>RA1555</p>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="arrow-dropright"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img [src]="userLogo" class="user">
+        </ion-col>
+        <ion-col col-9>
+          <strong>Sheetal Ji</strong>
+          <p>RA1555</p>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="arrow-dropright"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <button ion-button (click)="addPatient()">ADD PATIENT</button>
+  </ion-grid>
+</ion-footer>

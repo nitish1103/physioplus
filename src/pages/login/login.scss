@@ -1,0 +1,41 @@
+page-login {
+  ion-card {
+    margin: auto!important;
+    margin-top: 10px!important;
+  }
+}
+.search-spinner{
+  top:45%;
+  left: 45%;
+  position: fixed;
+  z-index: 1;
+  color: white;
+}
+
+.sliderImage {
+  width: 65%;
+  margin-left: 16%;
+  margin-top: 20%;
+  margin-bottom: 31px;
+}
+
+.scroll-content {
+  overflow-y: hidden;
+}
+
+.message {
+  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 20px;
+  opacity: .6;
+}
+
+.form-control {
+  border-radius: 64px;
+  padding: 0 2.6rem;
+  width: 95%;
+  margin: 10px;
+  height: 51px;
+  margin-bottom: 15px;
+  background-color: #deebf1;
+}
